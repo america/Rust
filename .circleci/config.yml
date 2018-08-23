@@ -1,9 +1,9 @@
 version: 2
 
 jobs:
-  test:
+  build:
     docker:
-      - image: rust:1
+      - image: cicleci/rust
     steps:
       - checkout
       - run:
